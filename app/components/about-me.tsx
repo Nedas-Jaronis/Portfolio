@@ -13,7 +13,7 @@ export default function AboutMe() {
     <div className="grid lg:grid-cols-2 gap-8 items-center">
       <div className="relative aspect-[3/4] w-full max-w-md mx-auto">
         <Image
-          src="/Profile_2_Picture.jpg"
+          src="/Profile_2_Picture.JPG"
           alt="Professional portrait"
           fill
           className="object-cover rounded-lg"
