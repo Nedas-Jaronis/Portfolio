@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header className="w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 fixed top-0 z-50">
       <div className="container mx-auto px-4 py-2">
-        <div className="flex h-24 items-center justify-between">
+        <div className="flex h-18 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-3xl md:text-4xl font-semibold tracking-tight">Nedas Jaronis</span>
           </Link>
