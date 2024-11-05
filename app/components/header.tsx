@@ -22,7 +22,7 @@ export default function Header() {
     const targetElement = document.querySelector(href)
 
     if (targetElement) {
-      const offset = -70 // Adjust this value to control how much higher the scroll lands
+      const offset = -50 // Adjust this value to control how much higher the scroll lands
       const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset + offset
       
       window.scrollTo({
