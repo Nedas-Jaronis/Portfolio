@@ -2,8 +2,8 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer id="footer" className="w-full py-8 flex flex-col items-center gap-6">
-      <nav className="flex gap-8">
+    <footer id="footer" className="w-full py-6 flex flex-col items-center gap-4">
+      <nav className="flex flex-col sm:flex-row gap-4 sm:gap-8">
         <Link 
           href="#intro" 
           className="text-base hover:text-primary/80 transition-colors"
@@ -35,7 +35,7 @@ export default function Footer() {
           Contact
         </Link>
       </nav>
-      <p className="text-sm text-muted-foreground">
+      <p className="text-sm text-muted-foreground text-center">
         Copyright © {new Date().getFullYear()} Nedas Jaronis. All Rights Reserved.
       </p>
     </footer>
