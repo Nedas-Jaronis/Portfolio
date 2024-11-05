@@ -1,17 +1,17 @@
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
-import { GraduationCap, Trophy } from "lucide-react"
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import { GraduationCap, Trophy } from "lucide-react";
 
 export default function AboutMe() {
   return (
-    <section id="aboutme" className="w-full min-h-screen flex flex-col items-center justify-center bg-white p-8">
-      <div className="text-center mb-16">
-        <p className="text-lg text-blue-600 font-semibold mb-2">Get To Know More</p>
-        <h1 className="text-5xl font-bold text-black">About Me</h1>
+    <section id="aboutme" className="w-full flex flex-col items-center justify-center bg-white p-6">
+      <div className="text-center mb-12">
+        <p className="text-base text-blue-600 font-semibold mb-1">Get To Know More</p>
+        <h1 className="text-4xl font-bold text-black">About Me</h1>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8 items-center">
-        <div className="relative aspect-[3/4] w-full max-w-md mx-auto">
+      <div className="grid lg:grid-cols-2 gap-6 items-center">
+        <div className="relative aspect-[3/4] w-full max-w-xs mx-auto">
           <Image
             src="/Profile_2_Picture.JPG"
             alt="Professional portrait"
@@ -21,24 +21,24 @@ export default function AboutMe() {
           />
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6">
           <div className="grid sm:grid-cols-2 gap-4">
-            <Card className="p-6 border border-gray-300 shadow-md hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="space-y-4 p-0">
-                <Trophy className="w-8 h-8 mx-auto text-blue-600" />
-                <h2 className="text-xl font-semibold text-center text-black">Experience</h2>
-                <ul className="space-y-2 text-gray-600 leading-relaxed">
+            <Card className="p-4 border border-gray-300 shadow-md hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="space-y-3 p-0">
+                <Trophy className="w-6 h-6 mx-auto text-blue-600" />
+                <h2 className="text-lg font-semibold text-center text-black">Experience</h2>
+                <ul className="space-y-1 text-gray-600 leading-snug">
                   <li>UF/IBM AI Days Hackathon: Insure Sight</li>
                   <li>Personal Project: Mini-Casino</li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="p-6 border border-gray-300 shadow-md hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="space-y-4 p-0">
-                <GraduationCap className="w-8 h-8 mx-auto text-blue-600" />
-                <h2 className="text-xl font-semibold text-center text-black">Education</h2>
-                <div className="space-y-2 text-gray-600 leading-relaxed">
+            <Card className="p-4 border border-gray-300 shadow-md hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="space-y-3 p-0">
+                <GraduationCap className="w-6 h-6 mx-auto text-blue-600" />
+                <h2 className="text-lg font-semibold text-center text-black">Education</h2>
+                <div className="space-y-1 text-gray-600 leading-snug">
                   <p>Bachelor of Science in <span className="text-blue-600 font-semibold">Computer Science</span></p>
                   <p>Expected Graduation: <span className="text-blue-600 font-semibold">May 2028</span></p>
                 </div>
@@ -46,7 +46,7 @@ export default function AboutMe() {
             </Card>
           </div>
 
-          <div className="text-gray-800 leading-relaxed text-lg space-y-4">
+          <div className="text-gray-800 leading-snug text-base space-y-3">
             <p>
               I&apos;m a freshman studying <span className="font-bold text-blue-600">Computer Science</span> at the 
               <span className="font-bold text-blue-600"> University of Florida</span>, graduating in May 2028. 
@@ -62,9 +62,9 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-16">
+      <div className="flex justify-center mt-12">
         <svg
-          className="w-6 h-6 animate-bounce text-blue-600"
+          className="w-5 h-5 animate-bounce text-blue-600"
           fill="none"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -76,5 +76,5 @@ export default function AboutMe() {
         </svg>
       </div>
     </section>
-  )
+  );
 }
