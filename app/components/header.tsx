@@ -4,11 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,10 +12,26 @@ export default function Header() {
   const navItems = [
     { href: "#intro", label: "Intro" },
     { href: "#aboutme", label: "About Me" },
-    { href: '#experience', label: 'Experience'},
+    { href: "#experience", label: "Experience" },
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
   ]
+
+  // Scroll handler with offset
+  const handleScroll = (event, href) => {
+    event.preventDefault() // Prevent default anchor behavior
+    const targetElement = document.querySelector(href)
+
+    if (targetElement) {
+      const offset = -80 // Adjust this to control how much higher the scroll lands
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset + offset
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth',
+      })
+    }
+  }
 
   return (
     <header className="w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 fixed top-0 z-50">
@@ -31,13 +43,14 @@ export default function Header() {
           
           <nav className="hidden lg:flex items-center justify-center space-x-10 text-xl font-medium">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
+                onClick={(e) => handleScroll(e, item.href)}
                 className="transition-colors hover:text-foreground/80 text-foreground/60 hover:text-primary"
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </nav>
           
@@ -54,14 +67,17 @@ export default function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col space-y-6 mt-8">
                 {navItems.map((item) => (
-                  <Link
+                  <a
                     key={item.href}
                     href={item.href}
+                    onClick={(e) => {
+                      handleScroll(e, item.href)
+                      setIsOpen(false) // Close menu on mobile after clicking
+                    }}
                     className="text-3xl font-medium transition-colors hover:text-foreground/80 text-foreground/60 hover:text-primary"
-                    onClick={() => setIsOpen(false)}
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 ))}
               </nav>
             </SheetContent>

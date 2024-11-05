@@ -1,44 +1,44 @@
-import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Trophy } from "lucide-react";
+import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
+import { GraduationCap, Trophy } from "lucide-react"
 
 export default function AboutMe() {
   return (
-    <section id="aboutme" className="w-full flex flex-col items-center justify-center bg-white py-8 px-4">
-      <div className="text-center mb-8">
-        <p className="text-sm text-blue-600 font-medium mb-2">Get To Know More</p>
-        <h1 className="text-3xl font-bold text-black">About Me</h1>
+    <section id="aboutme" className="w-full min-h-screen flex flex-col items-center justify-center bg-white p-8">
+      <div className="text-center mb-16">
+        <p className="text-lg text-blue-600 font-semibold mb-2">Get To Know More</p>
+        <h1 className="text-5xl font-bold text-black">About Me</h1>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-6 items-center">
-        <div className="relative aspect-[3/4] w-56 mx-auto">
+      <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="relative aspect-[3/4] w-full max-w-md mx-auto">
           <Image
             src="/Profile_2_Picture.JPG"
             alt="Professional portrait"
             fill
-            className="object-cover rounded-lg shadow-lg transition-transform duration-200 hover:scale-105"
+            className="object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
             priority
           />
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-8">
           <div className="grid sm:grid-cols-2 gap-4">
-            <Card className="p-4 border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <CardContent className="space-y-2">
-                <Trophy className="w-5 h-5 text-blue-600" />
-                <h2 className="text-md font-bold text-black">Experience</h2>
-                <ul className="text-gray-600 text-sm">
+            <Card className="p-6 border border-gray-300 shadow-md hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="space-y-4 p-0">
+                <Trophy className="w-8 h-8 mx-auto text-blue-600" />
+                <h2 className="text-xl font-semibold text-center text-black">Experience</h2>
+                <ul className="space-y-2 text-gray-600 leading-relaxed">
                   <li>UF/IBM AI Days Hackathon: Insure Sight</li>
                   <li>Personal Project: Mini-Casino</li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="p-4 border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <CardContent className="space-y-2">
-                <GraduationCap className="w-5 h-5 text-blue-600" />
-                <h2 className="text-md font-bold text-black">Education</h2>
-                <div className="text-gray-600 text-sm">
+            <Card className="p-6 border border-gray-300 shadow-md hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="space-y-4 p-0">
+                <GraduationCap className="w-8 h-8 mx-auto text-blue-600" />
+                <h2 className="text-xl font-semibold text-center text-black">Education</h2>
+                <div className="space-y-2 text-gray-600 leading-relaxed">
                   <p>Bachelor of Science in <span className="text-blue-600 font-semibold">Computer Science</span></p>
                   <p>Expected Graduation: <span className="text-blue-600 font-semibold">May 2028</span></p>
                 </div>
@@ -46,19 +46,35 @@ export default function AboutMe() {
             </Card>
           </div>
 
-          <div className="text-gray-800 text-sm space-y-2">
+          <div className="text-gray-800 leading-relaxed text-lg space-y-4">
             <p>
               I&apos;m a freshman studying <span className="font-bold text-blue-600">Computer Science</span> at the 
-              <span className="font-bold text-blue-600"> University of Florida</span>. 
-              I aspire to be an <span className="font-bold text-blue-600">AI engineer</span>.
+              <span className="font-bold text-blue-600"> University of Florida</span>, graduating in May 2028. 
+              I aspire to be an <span className="font-bold text-blue-600">AI engineer</span>, focused on creating 
+              innovative solutions for positive change.
             </p>
             <p>
               I developed Insure Sight, an app for documenting belongings before disasters to simplify insurance claims. 
-              Outside of coding, I enjoy surfing, snowboarding, and soccer.
+              Outside of coding, I enjoy surfing, snowboarding, and soccer. 
+              I&apos;m excited to connect with others in the tech community!
             </p>
           </div>
         </div>
       </div>
+
+      <div className="flex justify-center mt-16">
+        <svg
+          className="w-6 h-6 animate-bounce text-blue-600"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
     </section>
-  );
+  )
 }
