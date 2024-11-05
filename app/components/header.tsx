@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
 import { Menu } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -18,12 +17,12 @@ export default function Header() {
   ]
 
   // Scroll handler with offset
-  const handleScroll = (event, href) => {
+  const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     event.preventDefault() // Prevent default anchor behavior
     const targetElement = document.querySelector(href)
 
     if (targetElement) {
-      const offset = -80 // Adjust this to control how much higher the scroll lands
+      const offset = -80 // Adjust this value to control how much higher the scroll lands
       const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset + offset
       
       window.scrollTo({
@@ -37,9 +36,9 @@ export default function Header() {
     <header className="w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 fixed top-0 z-50">
       <div className="container mx-auto px-4 py-2">
         <div className="flex h-18 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
+          <a href="/" className="flex items-center space-x-2">
             <span className="text-3xl md:text-4xl font-semibold tracking-tight">Nedas Jaronis</span>
-          </Link>
+          </a>
           
           <nav className="hidden lg:flex items-center justify-center space-x-10 text-xl font-medium">
             {navItems.map((item) => (
