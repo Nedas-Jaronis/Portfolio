@@ -7,14 +7,15 @@ export default function Intro() {
   return (
     <section id="intro" className="w-full min-h-screen flex flex-col items-center justify-center">
       <Image
-        src="/Final_Profile_Pic_1.png"
+        src="/profile_3-modified.png"
         alt="Profile picture"
-        width={300}
-        height={300}
+        width={960}
+        height={960}
+        quality = {100}
         className="object-cover w-96 h-96"
         priority
       />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-8">
         <p className="text-lg text-muted-foreground">Hello, I'm</p>
         <h1 className="text-4xl md:text-5xl font-bold mb-2">Nedas Jaronis</h1>
         <p className="text-xl md:text-2xl text-muted-foreground">
