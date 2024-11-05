@@ -13,7 +13,7 @@ export default function Projects() {
     {
       title: "Mini-Casino",
       image: "/Casino_pic.webp",
-      github: "#",
+      github: "https://github.com/Nedas-Jaronis/Mini-Casino",
     }
   ];
 
