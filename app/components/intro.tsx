@@ -12,7 +12,7 @@ export default function Intro() {
         width={960}
         height={960}
         quality = {100}
-        className="object-cover w-96 h-96"
+        className="object-cover w-80 h-80"
         priority
       />
       <div className="flex flex-col items-center mt-8">
