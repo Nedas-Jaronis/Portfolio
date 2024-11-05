@@ -1,18 +1,18 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, ChevronDown } from "lucide-react"
+import { Github, Linkedin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function Intro() {
   return (
-    <section id="intro" className="w-full min-h-screen flex flex-col items-center justify-center">
+    <section id="intro" className="w-full min-h-screen flex flex-col items-center justify-center mt-16 md:mt-20"> {/* Added top margin */}
       <Image
         src="/profile_3-modified.png"
         alt="Profile picture"
         width={960}
         height={960}
-        quality = {100}
-        className="object-cover w-80 h-80"
+        quality={100}
+        className="object-cover w-80 h-80 rounded-full" // Rounded to match the profile shape
         priority
       />
       <div className="flex flex-col items-center mt-8">
@@ -27,7 +27,7 @@ export default function Intro() {
         <Button variant="outline" className="min-w-[150px]" onClick={() => window.open('/NedasResume.pdf', '_blank')}>
           Download CV
         </Button>
-        <Button asChild className="min-w-[150px] bg-zinc-800 text-white hover:bg-zinc-700" >
+        <Button asChild className="min-w-[150px] bg-zinc-800 text-white hover:bg-zinc-700">
           <Link href="#contact">Contact Info</Link>
         </Button>
       </div>
