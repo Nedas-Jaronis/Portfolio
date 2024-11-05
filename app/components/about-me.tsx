@@ -47,13 +47,13 @@ export default function AboutMe() {
         </div>
 
         <p className="text-muted-foreground leading-relaxed">
-          I&apos;m a freshman studying Computer Science at the University of Florida,
-          graduating in May 2028. I aspire to be an AI engineer, dedicated to developing innovative
-          solutions that make a positive impact. I created Insure Sight, an app that helps users
-          document their belongings before disasters for easier insurance claims. I also developed
-          a Mini-Casino project in C++ to further strengthen my programming skills and delve into
-          game development. Outside of coding, I enjoy surfing, snowboarding, and playing
-          soccer. I&apos;m excited to connect with others in the tech community!
+          I&apos;m a freshman studying <span className="font-bold text-black"> Computer Science</span> at the 
+          <span className="font-bold text-black"> University of Florida</span>, graduating in May 2028. 
+          I aspire to be an <span className="font-bold text-black"> AI engineer</span>, focused on creating 
+          innovative solutions for positive change. I developed <span className="font-bold text-black"> Insure Sight</span>, an app for 
+          documenting belongings before disasters to simplify insurance claims. 
+          Outside of coding, I enjoy surfing, snowboarding, and soccer. 
+          I&apos;m excited to <span className="font-bold text-black"> connect</span> with others in the tech community!
         </p>
       </div>
     </div>
