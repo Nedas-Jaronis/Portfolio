@@ -18,15 +18,15 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="w-full flex flex-col items-center justify-center bg-white p-6">
-      <div className="text-center mb-10">
-        <p className="text-gray-700 mb-1">Browse My Recent</p>
+    <section id="projects" className="w-full flex flex-col items-center justify-center bg-white py-6 px-4 mt-12">
+      <div className="text-center mb-8">
+        <p className="text-gray-700 text-sm mb-1">Browse My Recent</p>
         <h2 className="text-3xl font-bold text-blue-600">Projects</h2>
       </div>
       
-      <div className="grid md:grid-cols-2 max-w-4xl gap-6 w-full">
+      <div className="grid md:grid-cols-2 max-w-4xl gap-4 w-full">
         {projects.map((project, index) => (
-          <Card key={index} className="bg-card border border-gray-300 overflow-hidden shadow-md transition-transform transform hover:scale-105">
+          <Card key={index} className="bg-card border border-gray-200 shadow-sm overflow-hidden transition-transform transform hover:scale-105">
             <CardContent className="p-4">
               <div className="aspect-square relative bg-gray-100 rounded-lg overflow-hidden">
                 <Image
@@ -45,20 +45,6 @@ export default function Projects() {
             </CardFooter>
           </Card>
         ))}
-      </div>
-
-      <div className="flex justify-center mt-12">
-        <svg
-          className="w-5 h-5 animate-bounce text-blue-600"
-          fill="none"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
       </div>
     </section>
   );
