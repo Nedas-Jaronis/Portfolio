@@ -2,9 +2,8 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-
 import Intro from './components/intro'
-import AboutMe from './components/about-me'
+// import AboutMe from './components/about-me'
 import Projects from './components/projects'
 import Experience from './components/experience'
 import ContactMe from './components/contact-me'
@@ -14,7 +13,7 @@ export default function Home() {
   return (
     <div className="font-['Poppins',sans-serif] container">
       <Intro />
-      <AboutMe />
+      {/* <AboutMe /> */}
       <Experience />
       <Projects />
       <ContactMe />
