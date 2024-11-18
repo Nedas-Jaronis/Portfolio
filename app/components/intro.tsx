@@ -59,7 +59,10 @@
 //   )
 // }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f5eb17af5df5923e4aee6721330fadc054361f5
 import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, GraduationCap, Trophy, Download, Mail, User } from "lucide-react"
