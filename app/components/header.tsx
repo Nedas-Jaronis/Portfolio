@@ -3,7 +3,16 @@
 import { useState } from 'react'
 import { Menu } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -64,6 +73,9 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetHeader>
+                <SheetTitle className="hidden"></SheetTitle>
+              </SheetHeader>
               <nav className="flex flex-col space-y-6 mt-8">
                 {navItems.map((item) => (
                   <a
