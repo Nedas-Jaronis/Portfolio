@@ -19,8 +19,9 @@ export default function Footer() {
         inline: "nearest",
       });
 
-      // Adjust the scroll position after scrolling to the experience section
-      window.scrollBy(0, -1750); // Adjust scroll by 100px upwards to offset
+      // Adjust scroll position based on the window width (mobile or desktop)
+      const scrollOffset = window.innerWidth <= 768 ? -1750 : -1500; // Mobile offset (-1700) and Desktop offset (-1500)
+      window.scrollBy(0, scrollOffset); // Adjust scroll by the selected offset
     }
     setIsOpen(false); // Close the dropdown after clicking the link
   };
@@ -91,13 +92,6 @@ export default function Footer() {
           className="text-base hover:text-primary/80 transition-colors"
         >
           Intro
-        </Link>
-        <Link
-          href="#aboutme"
-          onClick={handleLinkClick} // Close dropdown when clicked
-          className="text-base hover:text-primary/80 transition-colors"
-        >
-          About Me
         </Link>
         <Link
           href="#experience"
