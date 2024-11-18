@@ -21,14 +21,14 @@ export default function Footer() {
 
       // Adjust scroll position based on the window width (mobile or desktop)
       const scrollOffset = window.innerWidth <= 768 ? -1750 : -1500; // Mobile offset (-1700) and Desktop offset (-1500)
-      window.scrollBy(0, scrollOffset); // Adjust scroll by the selected offset
+      window.scrollBy(0, scrollOffset); 
     }
-    setIsOpen(false); // Close the dropdown after clicking the link
+    setIsOpen(false); //Close dropdown post click
   };
 
-  // Similar scroll function for other links
+
   const handleLinkClick = () => {
-    setIsOpen(false); // Close the dropdown when any link is clicked
+    setIsOpen(false);
   };
 
   return (
