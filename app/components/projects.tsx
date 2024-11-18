@@ -18,37 +18,37 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="w-full flex flex-col items-center justify-center bg-white py-16 px-4 min-h-screen">
-      <div className="text-center mb-8">
-        <p className="text-sm text-gray-700 mb-2">Browse My Recent</p>
-        <h2 className="text-3xl font-bold text-blue-600">Projects</h2>
+    <section id="projects" className="w-full flex flex-col items-center justify-center bg-white py-8 px-4 min-h-[100vh]">
+      <div className="text-center mb-6">
+        <p className="text-xs text-gray-700 mb-1">Browse My Recent</p>
+        <h2 className="text-2xl font-bold text-blue-600">Projects</h2>
       </div>
       
-      <div className="grid md:grid-cols-2 max-w-4xl gap-6 w-full justify-center items-center">
+      <div className="grid sm:grid-cols-2 max-w-2xl gap-4 w-full justify-center items-center">
         {projects.map((project, index) => (
-          <Card key={index} className="bg-card border-2 border-gray-200 shadow-lg overflow-hidden transition-transform transform hover:scale-105">
-            <CardContent className="p-4">
-              <div className="aspect-square relative bg-gray-100 rounded-lg overflow-hidden">
+          <Card key={index} className="bg-card border border-gray-200 shadow-md overflow-hidden transition-transform transform hover:scale-105">
+            <CardContent className="p-3">
+              <div className="relative w-full pt-[75%]">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-md"
                 />
               </div>
             </CardContent>
-            <CardFooter className="flex flex-col gap-2 p-4 items-center">
-              <h3 className="text-lg font-bold text-black">{project.title}</h3>
-              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors" asChild>
+            <CardFooter className="flex flex-col gap-1 p-3 items-center">
+              <h3 className="text-base font-semibold text-black">{project.title}</h3>
+              <Button variant="outline" size="sm" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors" asChild>
                 <Link href={project.github}>Github</Link>
               </Button>
             </CardFooter>
           </Card>
         ))}
       </div>
-      <div className="flex justify-center mt-16">
+      <div className="flex justify-center mt-12">
         <svg
-          className="w-6 h-6 animate-bounce text-blue-600"
+          className="w-5 h-5 animate-bounce text-blue-600"
           fill="none"
           strokeLinecap="round"
           strokeLinejoin="round"
