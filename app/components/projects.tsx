@@ -14,6 +14,11 @@ export default function Projects() {
       title: "Mini-Casino",
       image: "/Casino_pic.webp",
       github: "https://github.com/Nedas-Jaronis/Mini-Casino",
+    },
+    {
+      title: "Sudoku",
+      image: "/Sudoku_Cover_Photo.webp",
+      github: "https://github.com/trenton125/Sudoku-Project",
     }
   ];
 
