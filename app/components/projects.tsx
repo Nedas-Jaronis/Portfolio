@@ -20,6 +20,11 @@ export default function Projects() {
       image: "/Sudoku_Cover_Photo.webp",
       github: "https://github.com/trenton125/Sudoku-Project",
     }
+    {
+      title: "Automatic Assignment Notification System",
+      image: "/EmailAutomationGradingSystem.jpg",
+      github: "https://github.com/Nedas-Jaronis/Email-Automation-Grade-Notifier",
+    }
   ];
 
   return (
