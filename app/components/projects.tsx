@@ -19,7 +19,7 @@ export default function Projects() {
       title: "Sudoku",
       image: "/Sudoku_Cover_Photo.webp",
       github: "https://github.com/trenton125/Sudoku-Project",
-    }
+    },
     {
       title: "Automatic Assignment Notification System",
       image: "/EmailAutomationGradingSystem.jpg",
