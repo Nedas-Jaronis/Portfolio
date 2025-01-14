@@ -17,20 +17,20 @@ export default function Experience() {
               <Check className="h-5 w-5 text-blue-600" />
               <div>
                 <p className="font-semibold">HTML</p>
-                <p className="text-sm text-muted-foreground">Basic</p>
+                <p className="text-sm text-muted-foreground">Advanced</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-blue-600" />
               <div>
                 <p className="font-semibold">CSS</p>
-                <p className="text-sm text-muted-foreground">Basic</p>
+                <p className="text-sm text-muted-foreground">Advanced</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-blue-600" />
               <div>
-                <p className="font-semibold">JavaScript</p>
+                <p className="font-semibold">React</p>
                 <p className="text-sm text-muted-foreground">Basic</p>
               </div>
             </div>
@@ -44,20 +44,20 @@ export default function Experience() {
               <Check className="h-5 w-5 text-blue-600" />
               <div>
                 <p className="font-semibold">Python</p>
-                <p className="text-sm text-muted-foreground">Intermediate</p>
+                <p className="text-sm text-muted-foreground">Advanced</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-blue-600" />
               <div>
                 <p className="font-semibold">C++</p>
-                <p className="text-sm text-muted-foreground">Intermediate</p>
+                <p className="text-sm text-muted-foreground">Advanced</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-blue-600" />
               <div>
-                <p className="font-semibold">Flask</p>
+                <p className="font-semibold">JavaScript</p>
                 <p className="text-sm text-muted-foreground">Basic</p>
               </div>
             </div>
