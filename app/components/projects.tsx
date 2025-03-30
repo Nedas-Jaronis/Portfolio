@@ -24,6 +24,11 @@ export default function Projects() {
       title: "Automatic Assignment Notification System",
       image: "/EmailAutomationGradingSystem.jpg",
       github: "https://github.com/Nedas-Jaronis/Email-Automation-Grade-Notifier",
+    },
+    {
+      title: "Physic's Visualizer",
+      image: "/PhysicsPhuzzLogo.jpg",
+      github: "https://github.com/lucask6785/PhysicsPhuzz",
     }
   ];
 
