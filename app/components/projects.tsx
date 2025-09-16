@@ -6,6 +6,11 @@ import Link from "next/link";
 export default function Projects() {
   const projects = [
     {
+      title: "Physic's Visualizer",
+      image: "/PhysicsVisualizer.jpg",
+      github: "https://github.com/Nedas-Jaronis/PhysicsVisualizer",
+    },
+    {
       title: "Insure Sight",
       image: "/InsureSight_pic.webp",
       github: "https://github.com/kevin8999/InsureSight",
@@ -25,11 +30,6 @@ export default function Projects() {
       image: "/EmailAutomationGradingSystem.jpg",
       github: "https://github.com/Nedas-Jaronis/Email-Automation-Grade-Notifier",
     },
-    {
-      title: "Physic's Visualizer",
-      image: "/PhysicsPhuzzLogo.jpg",
-      github: "https://github.com/lucask6785/PhysicsPhuzz",
-    }
   ];
 
   return (
