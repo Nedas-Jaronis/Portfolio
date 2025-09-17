@@ -9,22 +9,18 @@ export default function Footer() {
   };
 
   // Handle scroll for the "Experience" link with adjusted scroll position
-  const handleExperienceScroll = (e: { preventDefault: () => void; }) => {
-    e.preventDefault(); // Prevent default link behavior
-    const experienceElement = document.getElementById("experience");
-    if (experienceElement) {
-      experienceElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start", // Scroll to the start of the section
-        inline: "nearest",
-      });
+const handleExperienceScroll = (e: { preventDefault: () => void }) => {
+  e.preventDefault();
+  const experienceElement = document.getElementById("experience");
+  if (experienceElement) {
+    const yOffset = window.innerWidth <= 768 ? -100 : -80; // Adjust these values based on your layout
+    const y = experienceElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-      // Adjust scroll position based on the window width (mobile or desktop)
-      const scrollOffset = window.innerWidth <= 768 ? -1750 : -1500; // Mobile offset (-1700) and Desktop offset (-1500)
-      window.scrollBy(0, scrollOffset); 
-    }
-    setIsOpen(false); //Close dropdown post click
-  };
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+  setIsOpen(false);
+};
+
 
 
   const handleLinkClick = () => {
