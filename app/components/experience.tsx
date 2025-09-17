@@ -31,7 +31,21 @@ export default function Experience() {
               <Check className="h-5 w-5 text-blue-600" />
               <div>
                 <p className="font-semibold">React</p>
+                <p className="text-sm text-muted-foreground">Advanced</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Check className="h-5 w-5 text-blue-600" />
+              <div>
+                <p className="font-semibold">Java Script</p>
                 <p className="text-sm text-muted-foreground">Basic</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Check className="h-5 w-5 text-blue-600" />
+              <div>
+                <p className="font-semibold">Type Script</p>
+                <p className="text-sm text-muted-foreground">Advanced</p>
               </div>
             </div>
           </div>
@@ -57,8 +71,22 @@ export default function Experience() {
             <div className="flex items-center gap-3">
               <Check className="h-5 w-5 text-blue-600" />
               <div>
-                <p className="font-semibold">JavaScript</p>
+                <p className="font-semibold">Numpy</p>
+                <p className="text-sm text-muted-foreground">Advanced</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Check className="h-5 w-5 text-blue-600" />
+              <div>
+                <p className="font-semibold">TensorFlow</p>
                 <p className="text-sm text-muted-foreground">Basic</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Check className="h-5 w-5 text-blue-600" />
+              <div>
+                <p className="font-semibold">Pandas</p>
+                <p className="text-sm text-muted-foreground">Advanced</p>
               </div>
             </div>
           </div>

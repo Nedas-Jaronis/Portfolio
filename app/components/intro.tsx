@@ -66,12 +66,11 @@ export default function IntroSection() {
         <div className="space-y-4 pt-8">
           {[
             { title: "About Me", icon: User, content: [
-              "As a freshman at the University of Florida, I'm on a journey to become an AI engineer. My passion lies in creating innovative solutions that drive positive change in our world.",
-              "I recently developed Insure Sight, an application that simplifies the insurance claim process by allowing users to document their belongings before disasters strike.",
-              "Beyond coding, I find balance in activities like surfing, snowboarding, and soccer. I'm always excited to connect with fellow tech enthusiasts and industry professionals!"
+              "As a sophomore studying Computer Science at the University of Florida, I'm passionate about becoming an AI researcher dedicated to building innovative solutions that create meaningful, real-world impact. Recently, I developed InsureSight, an application designed to simplify the insurance claim process by enabling users to document their belongings before disasters occur.",
+              "Outside of coding, I enjoy staying active through surfing, snowboarding, and soccer. I'm always eager to connect with fellow tech enthusiasts and industry professionals to learn, collaborate, and grow together."
             ]},
             { title: "Education", icon: GraduationCap, content: ["B.S. in Computer Science", "University of Florida", "Expected Graduation: May 2028"] },
-            { title: "Experience", icon: Trophy, content: ["UF/IBM AI Days Hackathon: Insure Sight", "Personal Project: Mini-Casino"] }
+            { title: "Experience", icon: Trophy, content: ["Director of Technological Advancements | UF AI Club", "UF/IBM AI Days Hackathon: Insure Sight", "Personal Project: Physics Visualizer"] }
           ].map(({ title, icon: Icon, content }) => (
             <Card key={title} className="border-none shadow-md bg-card/50 backdrop-blur-sm">
               <CardHeader className="py-2">

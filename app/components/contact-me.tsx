@@ -20,7 +20,7 @@ export default function ContactMe() {
           </Link>
           <div className="hidden sm:block h-6 w-px bg-gray-300" />
           <Link 
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/jaronisnedas/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 hover:text-blue-600 transition-colors text-lg md:text-xl text-gray-800"
