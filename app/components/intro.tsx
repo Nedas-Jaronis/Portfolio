@@ -28,7 +28,7 @@ export default function IntroSection() {
             </p>
             
             <div className="flex flex-wrap gap-4 justify-center pt-2">
-              <Button variant="outline" size="sm" className="group text-sm" onClick={() => window.open('/Nedas_Spring_Resume.pdf', '_blank')}>
+              <Button variant="outline" size="sm" className="group text-sm" onClick={() => window.open('/Nedas_Resume.pdf', '_blank')}>
                 <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                 Download CV
               </Button>
