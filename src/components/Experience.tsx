@@ -5,21 +5,24 @@ const Experience = () => {
   const experiences = [
     {
       role: "Director of Technological Advancements",
-      organization: "UF AI Club",
-      period: "2023 - Present",
-      description: "Leading technological initiatives and fostering innovation within the AI community at the University of Florida.",
+      organization: "UF AI Club (AI2 Center Partnership)",
+      period: "Summer 2025 – Present",
+      description:
+        "Planning and leading technical initiatives, developing AI and ML workshops, and coordinating interdisciplinary projects in collaboration with UF’s AI2 Center.",
     },
     {
-      role: "Hackathon Participant",
-      organization: "UF/IBM AI Days Hackathon",
-      period: "2023",
-      description: "Developed Insure Sight, an innovative application for simplifying insurance claims through AI-powered documentation.",
+      role: "Software Engineer Lead Analyst",
+      organization: "Tampa Bay Innovation",
+      period: "Summer 2025 – Present",
+      description:
+        "Providing technical strategy to executive leadership while developing full-stack applications and AI-driven automation solutions using React, TypeScript, Node.js, and Python.",
     },
     {
-      role: "Project Developer",
-      organization: "Personal Project",
-      period: "2023",
-      description: "Created Physics Visualizer, an interactive tool for visualizing complex physics concepts and simulations.",
+      role: "SolSearch – 1st Place, Sustainability Track",
+      organization: "Gator Hacks 2025",
+      period: "October 2025",
+      description:
+        "Built an AI-powered platform that evaluates land parcels for solar potential using geospatial data, machine learning models, and interactive React-based visualizations.",
     },
   ];
 

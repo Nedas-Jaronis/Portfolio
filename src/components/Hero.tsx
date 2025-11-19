@@ -45,15 +45,20 @@ const Hero = () => {
                   Contact Me
                 </Button>
               </a>
-              <Button variant="outline" className="gap-2 border-primary/50 hover:bg-primary/10">
-                <Download size={18} />
-                Download CV
-              </Button>
+              <a href="/Nedas_Jaronis_Resume.pdf" download>
+                <Button
+                  variant="outline"
+                  className="gap-2 border-primary/50 hover:bg-primary/10"
+                >
+                  <Download size={18} />
+                  Download CV
+                </Button>
+              </a>
             </div>
 
             <div className="flex gap-4 pt-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/jaronisnedas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 glass-card rounded-lg hover:bg-primary/10 transition-all duration-300 hover:-translate-y-1"
@@ -61,7 +66,7 @@ const Hero = () => {
                 <Linkedin className="text-primary" size={24} />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/Nedas-Jaronis"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 glass-card rounded-lg hover:bg-primary/10 transition-all duration-300 hover:-translate-y-1"

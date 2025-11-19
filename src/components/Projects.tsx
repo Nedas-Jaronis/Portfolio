@@ -1,40 +1,47 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { title } from "process";
 
 const Projects = () => {
   const projects = [
     {
+      title: "SolSearch",
+      description:
+        "An AI-powered platform that evaluates land parcels for solar energy potential using geospatial data, machine learning models, and interactive heat map visualizations. Winner of 1st place in the Sustainability Track at Gator Hacks 2025.",
+      github: "#", // add link if you want
+      color: "from-yellow-500/20 to-orange-500/20",
+    },
+    {
       title: "Physics Visualizer",
-      description: "An interactive visualization tool for physics simulations and calculations, making complex concepts easier to understand.",
+      description:
+        "A dynamic physics problem visualizer that interprets user questions and generates animated, real-time solutions using a BAML-enhanced LLM pipeline.",
       github: "#",
       color: "from-purple-500/20 to-pink-500/20",
     },
     {
-      title: "Insure Sight",
-      description: "An application designed to simplify the insurance claim process by enabling users to document their belongings before disasters occur.",
+      title: "Stock Market Prediction (Sentiment Analysis)",
+      description:
+        "A predictive analysis system leveraging sentiment analysis and market indicators to forecast stock movement trends using Python, NLP models, and financial data APIs.",
       github: "#",
-      color: "from-blue-500/20 to-cyan-500/20",
-    },
-    {
-      title: "Mini-Casino",
-      description: "A C++ based casino game simulation featuring multiple games with realistic probability and betting mechanics.",
-      github: "#",
-      color: "from-orange-500/20 to-red-500/20",
+      color: "from-blue-500/20 to-indigo-500/20",
     },
     {
       title: "Sudoku",
-      description: "An intelligent Sudoku solver and generator with multiple difficulty levels and hint system.",
+      description:
+        "An intelligent Sudoku solver and generator with multiple difficulty levels and an optional hinting system.",
       github: "#",
       color: "from-green-500/20 to-emerald-500/20",
     },
     {
-      title: "Automatic Assignment Notification System",
-      description: "Automated system for tracking and notifying students about new assignments and deadlines.",
-      github: "#",
-      color: "from-indigo-500/20 to-purple-500/20",
-    },
+      title: "Spotify Song Recommendation Analysis",
+      description:
+        "A sophisticated song recommendation system that uses BFS and DFS algorithms to find personalized song suggestions from a dataset of 600,000+ Spotify tracks.",
+        github: "https://github.com/Nedas-Jaronis/Project-2-DSA",
+        image: "/SpotifyProjImage.png" 
+    }
   ];
+
 
   return (
     <section id="projects" className="py-24 relative overflow-hidden">
@@ -90,10 +97,10 @@ const Projects = () => {
                     className="gap-2 bg-primary hover:bg-primary/90"
                     asChild
                   >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    {/* <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <ExternalLink size={16} />
                       View
-                    </a>
+                    </a> */}
                   </Button>
                 </div>
               </CardContent>

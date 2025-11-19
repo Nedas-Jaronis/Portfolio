@@ -27,11 +27,15 @@ const About = () => {
                 I'm passionate about becoming an AI researcher dedicated to building
                 innovative solutions that create meaningful, real-world impact.
               </p>
+
               <p className="text-muted-foreground leading-relaxed">
-                Recently, I developed <span className="text-primary font-semibold">InsureSight</span>,
-                an application designed to simplify the insurance claim process by enabling
-                users to document their belongings before disasters occur.
+                Recently, I developed <span className="text-primary font-semibold">SolScope</span>,
+                a hackathon-winning application that evaluates land parcels for solar energy
+                potential using AI-driven insights. Our tool analyzes topography, solar
+                irradiance, grid proximity, and renewable energy trends to help landowners,
+                developers, and policymakers make data-driven sustainability decisions.
               </p>
+
               <p className="text-muted-foreground leading-relaxed">
                 Outside of coding, I enjoy staying active through surfing, snowboarding,
                 and soccer. I'm always eager to connect with fellow tech enthusiasts and
@@ -71,15 +75,17 @@ const About = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-lg">Director of Technological Advancements</h4>
-                    <p className="text-muted-foreground">UF AI Club</p>
+                    <p className="text-muted-foreground">UF AI Club (AI2 Center Partnership)</p>
                   </div>
+
                   <div>
-                    <h4 className="font-semibold text-lg">UF/IBM AI Days Hackathon</h4>
-                    <p className="text-muted-foreground">Insure Sight Project</p>
+                    <h4 className="font-semibold text-lg">Software Engineer Lead Analyst</h4>
+                    <p className="text-muted-foreground">Tampa Bay Innovation</p>
                   </div>
+
                   <div>
-                    <h4 className="font-semibold text-lg">Personal Project</h4>
-                    <p className="text-muted-foreground">Physics Visualizer</p>
+                    <h4 className="font-semibold text-lg">SolSearch – 1st Place, Sustainability Track</h4>
+                    <p className="text-muted-foreground">Gator Hacks 2025</p>
                   </div>
                 </div>
               </CardContent>
