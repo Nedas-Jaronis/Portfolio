@@ -14,14 +14,28 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-    setFormData({ name: "", email: "", message: "" });
+
+    try {
+      const res = await fetch("http://localhost:5000/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        toast({ title: "Message Sent!", description: "Thanks for reaching out!" });
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        toast({ title: "Error", description: data.error });
+      }
+    } catch (err) {
+      toast({ title: "Error", description: "Something went wrong" });
+    }
   };
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
@@ -54,7 +68,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">nedas.jaronis@example.com</p>
+                    <p className="font-medium">jaronisnedas@gmail.com</p>
                   </div>
                 </div>
 
@@ -64,7 +78,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <p className="font-medium">+1 (555) 123-4567</p>
+                    <p className="font-medium">+1 (386) 283-7781</p>
                   </div>
                 </div>
 

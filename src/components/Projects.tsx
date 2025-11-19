@@ -9,38 +9,39 @@ const Projects = () => {
       title: "SolSearch",
       description:
         "An AI-powered platform that evaluates land parcels for solar energy potential using geospatial data, machine learning models, and interactive heat map visualizations. Winner of 1st place in the Sustainability Track at Gator Hacks 2025.",
-      github: "#", // add link if you want
-      color: "from-yellow-500/20 to-orange-500/20",
+      github: "https://github.com/Nedas-Jaronis/SolSearch",
+      color: "from-yellow-400/20 to-orange-400/20",
     },
     {
       title: "Physics Visualizer",
       description:
         "A dynamic physics problem visualizer that interprets user questions and generates animated, real-time solutions using a BAML-enhanced LLM pipeline.",
-      github: "#",
-      color: "from-purple-500/20 to-pink-500/20",
+      github: "https://github.com/Nedas-Jaronis/PhysicsVisualizer",
+      color: "from-purple-500/20 to-violet-500/20",
     },
     {
       title: "Stock Market Prediction (Sentiment Analysis)",
       description:
         "A predictive analysis system leveraging sentiment analysis and market indicators to forecast stock movement trends using Python, NLP models, and financial data APIs.",
-      github: "#",
-      color: "from-blue-500/20 to-indigo-500/20",
+      github: "https://github.com/Nedas-Jaronis/Stock-Prediction-Analysis",
+      color: "from-cyan-400/20 to-blue-600/20", // finance-like, professional
+    },
+    {
+      title: "Spotify Song Recommendation Analysis",
+      description:
+      "A sophisticated song recommendation system that uses BFS and DFS algorithms to find personalized song suggestions from a dataset of 600,000+ Spotify tracks.",
+      github: "https://github.com/Nedas-Jaronis/Project-2-DSA",
+      color: "from-pink-400/20 to-red-500/20", // vibrant music-inspired gradient
     },
     {
       title: "Sudoku",
       description:
         "An intelligent Sudoku solver and generator with multiple difficulty levels and an optional hinting system.",
-      github: "#",
-      color: "from-green-500/20 to-emerald-500/20",
+      github: "https://github.com/Nedas-Jaronis/Sudoku-Project",
+      color: "from-green-400/20 to-teal-500/20", // puzzle/fresh green gradient
     },
-    {
-      title: "Spotify Song Recommendation Analysis",
-      description:
-        "A sophisticated song recommendation system that uses BFS and DFS algorithms to find personalized song suggestions from a dataset of 600,000+ Spotify tracks.",
-        github: "https://github.com/Nedas-Jaronis/Project-2-DSA",
-        image: "/SpotifyProjImage.png" 
-    }
   ];
+
 
 
   return (
