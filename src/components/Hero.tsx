@@ -1,6 +1,7 @@
 import { ArrowDown, Github, Linkedin, Download, Mail } from "lucide-react";
 import { Link } from "react-scroll";
 import { Button } from "@/components/ui/button";
+import FlowFieldBackground from "@/components/ui/flow-field-background";
 import profileImage from "../assets/Profile_1_Picture_Circle.png";
 
 const Hero = () => {
@@ -9,14 +10,14 @@ const Hero = () => {
       id="hero"
       className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
     >
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float"
-          style={{ animationDelay: "1s" }}
-        />
-      </div>
+      {/* Flow Field Background */}
+      <FlowFieldBackground
+        color="#0ea5e9"
+        speed={0.4}
+        particleCount={400}
+        trailOpacity={0.08}
+        targetFps={24}
+      />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
